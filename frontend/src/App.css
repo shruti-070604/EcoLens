@@ -1,0 +1,42 @@
+/* src/CSS/SustainabilityDetails.css */
+
+.sustainability-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #f9f9f9;
+}
+
+.sustainability-container h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.sustainability-container h3 {
+  font-size: 1.2em;
+  color: #007BFF;
+}
+
+.score {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.score-breakdown {
+  margin-top: 16px;
+}
+
+.parameter {
+  margin-bottom: 12px;
+}
+
+.parameter h5 {
+  font-weight: bold;
+  color: #555;
+}
+
+.parameter p {
+  margin: 4px 0;
+  color: #666;
+}
