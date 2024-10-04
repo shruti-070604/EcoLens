@@ -1,4 +1,4 @@
-// src/components/ImageUpload.js
+// src/components/BarcodeInput.js
 
 import React, { useState } from 'react';
 import axios from 'axios';

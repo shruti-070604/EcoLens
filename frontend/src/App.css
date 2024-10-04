@@ -1,42 +1,76 @@
-/* src/CSS/SustainabilityDetails.css */
-
-.sustainability-container {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px 0;
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
   background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
 }
 
-.sustainability-container h2 {
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2b8a3e; /* Green color */
+}
+
+.tip-box {
+  background-color: #e0f7fa; /* Light cyan */
+  border: 2px solid #b2ebf2; /* Cyan */
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  margin-bottom: 20px;
+  animation: fadeIn 1s; /* Fade-in animation */
+}
+
+.tip-box p {
+  transition: all 0.1s ease-out;
+}
+
+.barcode-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  border: 1px solid #b0bec5; /* Light grey */
+  border-radius: 5px;
+  width: 60%;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-text {
   font-size: 1.5em;
-  color: #333;
+  white-space: pre; /* Keep spacing */
 }
 
-.sustainability-container h3 {
-  font-size: 1.2em;
-  color: #007BFF;
-}
-
-.score {
-  font-weight: bold;
-  font-size: 1.3em;
-}
-
-.score-breakdown {
-  margin-top: 16px;
-}
-
-.parameter {
-  margin-bottom: 12px;
-}
-
-.parameter h5 {
-  font-weight: bold;
-  color: #555;
-}
-
-.parameter p {
-  margin: 4px 0;
-  color: #666;
+.letter {
+  display: inline-block; /* Ensure letters appear inline */
+  transition: opacity 0.5s; /* Smooth opacity transition */
 }
