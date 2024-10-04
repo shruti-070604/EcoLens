@@ -37,11 +37,6 @@ git clone https://github.com/s-sweta/EcoLens.git
 cd EcoLens
 ```
 
-### Install dependencies
-```bash
-npm install
-```
-
 ### Setup environment variables
 Create a `.env` file in the root directory and add the following variables:
 ```env
@@ -55,6 +50,8 @@ GOOGLE_GEMINI_API_KEY=<your-google-generative-ai-api-key>
 ### Run the app
 1. **Backend:**
    ```bash
+   cd backend
+   npm install
    node index.js
    ```
    This will start the backend server on `http://localhost:5000`.
