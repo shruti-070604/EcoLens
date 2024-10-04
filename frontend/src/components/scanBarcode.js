@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import "../CSS/App.css"
 
 const ScanBarcode = ({ setProductData }) => {  // Change the name to start with an uppercase letter
   const [result, setResult] = useState('');
@@ -43,13 +44,23 @@ const ScanBarcode = ({ setProductData }) => {  // Change the name to start with 
   };
 
   return (
-    <div>
-    <h1>Upload a Barcode Image</h1>
-    <input type="file" accept="image/*" onChange={handleFileChange} />
-    {loading && <p>Loading...</p>}
-    {result && <p>Decoded Barcode: {result}</p>} {/* Display the decoded result */}
-    {error && <p style={{ color: 'red' }}>{error}</p>}
-  </div>
+    <div className='scan-barcode'>
+        <h2>Upload Product Barcode Image</h2>
+        <input 
+            type="file" 
+            accept="image/*" 
+            onChange={handleFileChange} 
+            id="fileInput" 
+            style={{ display: 'none' }} // Hide the file input
+        />
+        <button onClick={() => document.getElementById('fileInput').click()} style={{ padding: '10px 15px', backgroundColor: '#4CA64C', color: '#F2F2F0', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
+            Choose File
+        </button>
+        {loading && <p>Loading...</p>}
+        {result && <p>Decoded Barcode: {result}</p>} {/* Display the decoded result */}
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+    </div>
+
   );
 };
 

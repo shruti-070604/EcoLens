@@ -2,6 +2,7 @@
 
 import React from 'react';
 import ReactMarkdown from 'react-markdown'; // Import react-markdown
+import "../CSS/App.css"
 import '../CSS/SustainabilityDetails.css'; // Import your CSS file for styling
 
 const SustainabilityDetails = ({ productData }) => {

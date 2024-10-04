@@ -2,16 +2,20 @@
 
 .sustainability-container {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #E7F9E7;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 90%;
     margin: 20px auto;
+    padding: 10px 20px 10px;
     font-family: Arial, sans-serif;
 }
 
-h2 {
+.sustainability-container h2 {
     color: #333;
+}
+.sustainability-container p{
+    color:#397948;
 }
 
 h3 {
