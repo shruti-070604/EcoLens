@@ -33,7 +33,7 @@ Make sure you have the following installed on your machine:
 
 ### Clone the repository
 ```bash
-git clone https://github.com/s-sweta/EcoLens.git
+git clone https://github.com/shruti-070604/EcoLens.git
 cd EcoLens
 ```
 
